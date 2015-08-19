@@ -1,0 +1,7 @@
+{
+  "name": "geotwitter",
+  "version": "0.0.1",
+  "dependencies": {
+    "ngSmoothScroll": "~1.7.1"
+  }
+}

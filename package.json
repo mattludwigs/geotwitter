@@ -1,0 +1,24 @@
+{
+  "name": "geotwitter",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-babel": "^5.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.2.0"
+  },
+  "dependencies": {
+    "angular-google-maps": "^2.1.5",
+    "angular": "^1.4.3",
+    "angular-ui-router": "^0.2.15",
+    "express": "^4.13.3",
+    "font-awesome": "^4.4.0",
+    "lodash": "^3.10.1",
+    "morgan": "^1.6.1",
+    "oauth": "^0.9.13"
+  }
+}

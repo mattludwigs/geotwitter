@@ -1,0 +1,9 @@
+<p class="current-search" ng-class="{hide: hide}" ng-click="dropDown()">{{searchTerm}}</p>
+<form class="search" id="search-form" name="search-form">
+  <fieldset>
+    <input type="text" ng-model="searchTerm"/>
+    <button ng-click="onSubmit()" scroll-to="search-form" duration="700" offset="20"><i class="fa fa-search"></i></button>
+  </fieldset>
+</form>
+
+<button ng-class="{hide: hide}" class="drop-down" ng-click="dropDown()"><i class="fa fa-angle-double-down"></i></button>

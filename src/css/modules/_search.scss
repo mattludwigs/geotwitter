@@ -1,0 +1,122 @@
+div[search-box] {
+  height: 95px;
+  background-color: $blue;
+  position: relative;
+  margin-bottom: 20px;
+  transition: .2s height;
+
+  form {
+    opacity: 0;
+  }
+
+  &.active {
+    height: 120px;
+    background-color: white;
+
+    form {
+      opacity: 1;
+      transition: .2s opacity ease-in;
+    }
+
+    .search {
+      background-color: white;
+    }
+
+    .drop-down {
+      opacity: 0;
+    }
+  }
+}
+
+.search {
+  @extend .box-shadow;
+  margin: 0 auto 40px;
+  height: 100%;
+  padding: 15px;
+
+  label {
+    display: none;
+  }
+
+  fieldset {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 0;
+    max-width: 700px;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  input {
+
+    &[type="text"] {
+      border: 0;
+      border-bottom: 1px solid $blue;
+      height: 100px;
+      width: 100%;
+      font-size: 3rem;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  button {
+    background-color: $blue;
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: white;
+    transition: .2s background-color;
+
+    &:hover {
+      background-color: lighten( $blue, 10% );
+    }
+  }
+}
+
+.drop-down {
+  background-color: #ffeb3b;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -26px;
+  opacity: 1;
+  transition: .2s opacity;
+
+  &.hide {
+    opacity: 0;
+  }
+
+  &:hover {
+    background-color: lighten(#FFEB3B, 5%);
+  }
+}
+
+p {
+  &.current-search {
+    cursor: pointer;
+    font-size: 2rem;
+    opacity: 1;
+    text-align: center;
+    display: block;
+    color: white;
+    position: relative;
+    z-index: 5;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    &.hide {
+      height: 0;
+      opacity: 0;
+      display: none;
+    }
+  }
+}

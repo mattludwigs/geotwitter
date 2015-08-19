@@ -1,0 +1,29 @@
+<section class="display-filters">
+  <button class="flat" ng-click="showAll()" ng-if="currentTweet">Show all</button>
+</section>
+
+<ul class="clearfix">
+
+  <li ng-if="currentTweet" ng-class="{fullwidth: currentTweet}">
+    <div class="tweet">
+      <div class="user-image">
+        <img ng-src="{{currentTweet.image}}" alt=""/>
+      </div>
+
+      <h2>{{currentTweet.user}}</h2>
+      <p class="location">{{currentTweet.location ? currentTweet.location : "No Location Specified"}}</p>
+      <p>{{currentTweet.tweet}}</p>
+    </div>
+  </li>
+
+  <li ng-if="!currentTweet" ng-repeat="tweet in tweets">
+    <div class="tweet">
+      <div class="user-image">
+        <img ng-src="{{tweet.image}}" alt=""/>
+      </div>
+      <h2>{{tweet.user}}</h2>
+      <p class="location">{{tweet.location ? tweet.location : "No Location Specified"}}</p>
+      <p>{{tweet.tweet}}</p>
+    </div>
+  </li>
+</ul>
