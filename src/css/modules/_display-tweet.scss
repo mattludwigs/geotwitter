@@ -1,11 +1,12 @@
 display-tweets {
   display: block;
-  margin: 0 auto;
+  margin: -20px auto 0;
   padding: 0;
   width: 100%;
   @extend .container;
 }
 .display-filters {
+  margin-bottom: 20px;
 
   button {
     text-transform: uppercase;
