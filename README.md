@@ -39,7 +39,7 @@ Look at the config.example.js file. This is the data the app needs to run since 
 [Twitter Apps](https://apps.twitter.com/) to register to get your keys. Then once you have your keys you can run
 
 ```
-touch config.js && cat config.example.js > config.js
+cat config.example.js > config.js
 ```
 
 Then fill in the properties
